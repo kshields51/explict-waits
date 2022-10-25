@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Flask Tutorial</title>
+</head>
+<body>
+    <h1>This is the Index page</h1>
+    <div id="somediv"></li>
+<button id="thebutton" type="button">Click Me!</button>
+    <script>
+
+        function myfunc() {
+            var list = document.getElementById('somediv')
+            var tag = document.createElement("p");
+            var text = document.createTextNode("Tutorix is the best e-learning platform");
+            tag.appendChild(text)
+            list.appendChild(tag)
+        }
+        
+        var button = document.getElementById('thebutton')
+        button.addEventListener('click', ()=> {
+            const myTimeout =   (myfunc, 5000);
+
+        });
+
+        
+     </script>
+    
+    
+
+
+</body>
+</html> 
